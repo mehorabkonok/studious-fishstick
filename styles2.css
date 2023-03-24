@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+:root {
+    --body-background-color-one: #172336;
+    --body-background-color-two: #306AA5;
+    --div-color: #ffffff26;
+    --font-color: #ffffff;
+    --shadow-color: #51b5c7;
+    --button-color-one-before: rgba(182, 156, 255, 0.85);
+    --button-color-two-before: rgba(133, 210, 248, 0.85);
+    --button-color-one-after: rgba(182, 156, 255, 1);
+    --button-color-two-after: rgba(133, 210, 248, 1);
+    --button-font-color: #172336;
+}
+
+main{
+    display: flex;
+    gap: 1% 1%;
+    margin: 1%;
+    padding: 5% 5%;
+    border: 1px solid blue;
+
+    backdrop-filter: blur(5px);
+    color: var(--font-color);
+    opacity: 0.95;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 25px 7.5px var(--body-background-color-one),
+        0 0 25px 7.5px var(--body-background-color-two)
+    ;
+    background-image: url('/pngtree-cool-background-with-geometric-80s-design-picture-image_1157575.jpg');
+    
+}
+
+
+
+#section-div{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 2.5% 2.5%;
+    display: grid; 
+    grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+    grid-template-rows: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 5px var(--shadow-color);
+}
+
+section{
+    background-color: var(--div-color); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px 5px var(--shadow-color);
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2.5%;
+}
+
+
+/* Contact section goes here */
+#contact-section{
+    grid-row-start: 1;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding: 2.5% 2.5% 5% 2.5%;
+}
+#summery-section{
+    grid-row-start: 1;
+    grid-row-end: 12;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    padding: 1%;
+}
+#contact-div{
+    
+    padding: 2.5%;
+    margin: 2.5% 2.5% 5% 2.5%;
+}
+#img-div {
+    margin: 1% 0;
+    padding: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#img-div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 0 0 1.5% 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 5px var(--shadow-color);
+    
+}
+#name-div{
+    margin: 1% 0;
+    width: 100%;
+}
+#name-div h2, #name-div h3{
+    margin: 1%;
+    text-align: center;
+    color: var(--font-color);
+}
+#button-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2.5% 0;
+}
+button{
+    background-image: linear-gradient(
+        to right,
+        var(--button-color-one-before),
+        var(--button-color-two-before)
+    );
+    width: 40%;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    transition: transform 0.2s;
+    color: var(--button-font-color);
+    font-weight: bold;
+}
+button:hover {
+    width: 40%;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    transform: scale(1.05);
+    background-image: linear-gradient(
+        to right,
+        var(--button-color-one-after),
+        var(--button-color-two-after)
+    );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 2.5px 2.5px var(--shadow-color);
+    border: none;
+}
+#social-media-div{
+    margin: 1% 0;
+    padding: 1%;
+    font-size: 187.5%;
+    text-align: center;
+}
+i { 
+    margin: 0 1.5%;
+    transition: transform 0.2s;
+    color: rgba(255, 255, 255, 0.85);
+}
+i:hover {
+    transform: scale(1.25);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* summery section goes here */
+#summery-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#summery-div{
+    padding: 5%;
+    margin: 0 0 5% 0;
+    margin: auto;
+}
+#summery-heading-div{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0 1.5%;
+    color: var(--font-color);
+}
+#summery-para-div{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding: 0 1.5%;
+    color: var(--font-color);
+}
+
+#summery-button-div{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* media query */
+/* media query */
+/* media query */
+/* media query */
+/* media query */
+
+
+@media (max-width: 360px){
+    #section-div{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    section {
+        width: 100%;
+        margin: 5%;
+    }
+    h2{
+        
+        font-size: 30px;
+        line-height: 30px;
+    }
+    button{
+        
+        width: 75%;
+    }
+    #summery-button-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #resume-button, #portfolio-button {
+        width: 75%;
+    }
+}
+@media (min-width: 360px) and (max-width: 480px){
+    #section-div{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    section {
+        width: 100%;
+        margin: 5%;
+    }
+}
+@media (min-width: 480px) and (max-width: 768px){
+    #section-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section {
+        width: 100%;
+        margin: 5%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    #section-div{
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+    section {
+        width: 100%;
+        margin: 5%;
+    }
+    .button {
+        /* color: red; */
+        width: 80%;
+        transition: transform 0.2s;
+    }
+    .button:hover {
+        /* color: red; */
+        width: 80%;
+        transform: scale(1.05);
+    }
+    #summery-button-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
+    #summery-button-div .button {
+        width: 100%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    section {
+        margin: 5%;
+    }
+
+    .button {
+        /* color: red; */
+        width: 50%;
+        transition: transform 0.2s;
+    }
+    .button:hover {
+        /* color: red; */
+        width: 50%;
+        transform: scale(1.05);
+    }
+    #summery-button-div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
+    #summery-button-div > #resume-button{
+        width: 50%;
+        margin: 0 5% 0 0;
+    }
+    #summery-button-div > #portfolio-button{
+        width: 50%;
+        margin: 0 0 0 5%;
+    }
+}
+@media (min-width: 1200px){
+    section {
+        margin: 5%;
+    }
+    #contact-section{
+        width: 95%;
+    }
+    #summery-section{
+        width: 80%;
+        margin-left: 25%;
+    }
+}

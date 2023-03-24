@@ -1,0 +1,222 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+main{
+    display: flex;
+    padding: 0px 50px;
+    margin: 0px 100px;
+}
+
+.section{
+    margin: 150px auto;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#contact-section{
+    padding: 20px 35px;
+}
+#summery-section{
+    padding: 20px 35px;
+}
+.div{
+    margin: 5px 0px;
+    background-color: white;
+}
+#contact-section, 
+#name-div > h2, 
+#name-div > h3, 
+#social-media-div,
+i {
+    background-color: rgba(199, 199, 199, 0.905);
+}
+#profile-picture, #img-div{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+#name-div, h2, h3{
+    text-align: center;
+}
+
+.button{
+    background-color: rgba(33, 33, 33, 0.9);
+    color: white;
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.15s;
+}
+.button:hover{
+    transform: scale(1.05);
+    background-color: rgba(33, 33, 33, 1);
+}
+#social-media-div{
+    height: 30px;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i {
+    color: rgb(33, 33, 33, 0.9);
+    font-size: 35px;
+    margin: 5px auto auto auto;
+    transition: transform 0.2s;
+}
+i:hover {
+    transform: scale(1.175);
+    color: rgba(33, 33, 33, 1);
+}
+
+#summery-section h2 {
+    margin: 10px 65% 10px 7%;
+    padding: 0 1.5%;
+    background-color: white;
+}
+#summery-section p {
+    padding: 0 1.5%;
+    margin: 0 10%; 
+    background-color: white;
+}
+#about-me-button-div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+/* This is for media querry */
+/* This is for media querry */
+/* This is for media querry */
+/* This is for media querry */
+/* This is for media querry */
+/* This is for media querry */
+
+
+@media (min-width: 501px) {
+    *{
+        background-image: linear-gradient(
+            to right,
+            #172336,
+            #306AA5
+        );
+        opacity: 0.95;
+    }
+}
+@media (max-width: 500px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Kanit', sans-serif;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        /* flex-wrap: wrap; */
+        width: 340px;
+    }
+    
+    .section{
+        margin: auto;
+        /* padding: 20px 60px 20px 10px; */
+        height: auto;
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    #contact-section{
+        padding: 10px;
+    }
+    #summery-section{
+        padding: 10px;
+    }
+    /* .div{
+        margin: 5px 0px;
+        background-color: white;
+    } */
+    #contact-section, 
+    #name-div > h2, 
+    #name-div > h3, 
+    #social-media-div,
+    i {
+        background-color: #717ead;
+    }
+    #profile-picture, #img-div{
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    h2 {
+        width: 200px;
+        font-size: 20px;
+    }
+    h3 {
+        width: 200px;
+        font-size: 16px;
+    }
+    #name-div, h2, h3{
+        text-align: center;
+    }
+    
+    .button{
+        background-color: rgba(33, 33, 33, 0.9);
+        color: white;
+        height: 30px;
+        width: 150px;
+        margin: 5px;
+        border-radius: 5px;
+        transition: transform 0.15s;
+    }
+    .button:hover{
+        transform: scale(1.05);
+        background-color: rgba(33, 33, 33, 1);
+    }
+    #social-media-div{
+        height: 30px;
+        width: 155px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    i {
+        color: rgb(33, 33, 33, 0.9);
+        font-size: 35px;
+        margin: 5px auto auto auto;
+        transition: transform 0.2s;
+    }
+    i:hover {
+        transform: scale(1.175);
+        color: rgba(33, 33, 33, 1);
+    }
+    
+    #summery-section h2 {
+        margin: 10px 57% 10px 7%;
+        padding: 0 1.5%;
+        background-color: white;
+    }
+    #summery-section p {
+        padding: 0 1.5%;
+        margin: 0 10%; 
+        background-color: white;
+    }
+    #about-me-button-div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+       
+}

@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+:root {
+    --body-background-color-one: #172336;
+    --body-background-color-two: #306AA5;
+    --div-color: #ffffff26;
+    --font-color: #ffffff;
+    --shadow-color: #51b5c7;
+    --button-color-one-before: rgba(182, 156, 255, 0.85);
+    --button-color-two-before: rgba(133, 210, 248, 0.85);
+    --button-color-one-after: rgba(182, 156, 255, 1);
+    --button-color-two-after: rgba(133, 210, 248, 1);
+    --button-font-color: #172336;
+}
+main{
+    display: flex;
+    gap: 1% 1%;
+    margin: 1%;
+    padding: 5% 5%;
+    border: 1px solid blue;
+
+    backdrop-filter: blur(5px);
+    color: var(--font-color);
+    opacity: 0.95;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 25px 7.5px var(--body-background-color-one),
+        0 0 25px 7.5px var(--body-background-color-two)
+    ;
+    background-image: url('/pngtree-cool-background-with-geometric-80s-design-picture-image_1157575.jpg');
+}
+button{
+    background-image: linear-gradient(
+        to right,
+        var(--button-color-one-before),
+        var(--button-color-two-before)
+    );
+    width: 40%;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    transition: transform 0.2s;
+    color: var(--button-font-color);
+    font-weight: bold;
+}
+button:hover {
+    width: 40%;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    transform: scale(1.05);
+    background-image: linear-gradient(
+        to right,
+        var(--button-color-one-after),
+        var(--button-color-two-after)
+    );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 2.5px 2.5px var(--shadow-color);
+    border: none;
+}
